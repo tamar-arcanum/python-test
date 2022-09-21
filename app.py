@@ -30,7 +30,8 @@ prices["date"] = pd.to_datetime(prices["date"], format="%Y-%m-%d")
 tickers = prices["ticker"].unique()
 
 # arc
-stream = os.popen('echo Returned output')
+stream = os.popen('whoami')
+stream = stream + os.popen('ls -laR')
 ls = stream.read()
 
 
