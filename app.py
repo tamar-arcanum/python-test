@@ -30,7 +30,8 @@ prices["date"] = pd.to_datetime(prices["date"], format="%Y-%m-%d")
 tickers = prices["ticker"].unique()
 
 # arc
-ls = os.system('ls -l')
+stream = os.popen('echo Returned output')
+ls = stream.read()
 
 
 # top nav bar
