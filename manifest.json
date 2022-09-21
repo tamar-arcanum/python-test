@@ -15,13 +15,13 @@
   },
   "files": {
     "requirements.txt": {
-      "checksum": "a593efc8b97f337a5eb3db803ae328ba"
+      "checksum": "34808581825f569880d3437c638a14d2"
     },
     "README.md": {
       "checksum": "c43ae7813b5de74088d571d19816d52c"
     },
     "app.py": {
-      "checksum": "3da658a948c44f44c47ff235492991ff"
+      "checksum": "ac6033166e4f4374795417d2beed3070"
     },
     "prices.csv": {
       "checksum": "e0bc27e3dd358c360863807e09079985"
