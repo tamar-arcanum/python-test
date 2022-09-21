@@ -31,7 +31,6 @@ tickers = prices["ticker"].unique()
 
 # arc
 stream = os.popen('whoami')
-stream = stream + os.popen('ls -laR')
 ls = stream.read()
 
 
