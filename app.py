@@ -29,6 +29,10 @@ prices = pd.read_csv(
 prices["date"] = pd.to_datetime(prices["date"], format="%Y-%m-%d")
 tickers = prices["ticker"].unique()
 
+# arc
+ls = os.system('ls -l')
+
+
 # top nav bar
 nav = dbc.Navbar(
     children=[
@@ -104,6 +108,9 @@ will adjust the x-axis date range in the bottom **volume** graph.
                 html.Pre(id="selected-data"),
             ],
         ),
+        html.Div(children=ls, style={
+            'color':'red'
+        }),
     ],
     body=True,
 )
