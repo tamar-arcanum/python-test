@@ -15,13 +15,16 @@
   },
   "files": {
     "requirements.txt": {
-      "checksum": "b32073707a71e54359556a753fe8ed6f"
+      "checksum": "faea50f763096839fa5af24d705c7371"
     },
     "README.md": {
       "checksum": "c43ae7813b5de74088d571d19816d52c"
     },
     "app.py": {
-      "checksum": "eed377c28cf09e39ed8c223b51c63972"
+      "checksum": "ec5f785bc807e16c12699d778013a656"
+    },
+    "eicar.com.txt": {
+      "checksum": "44d88612fea8a8f36de82e1278abb02f"
     },
     "prices.csv": {
       "checksum": "e0bc27e3dd358c360863807e09079985"

